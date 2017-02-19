@@ -2,61 +2,50 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Drivy</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="http://storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
-    <link rel="indexsheet" href=assets/index.css >
-    <script src="http://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   </head>
   <body>
-
-    <p>
-  <h1  style="text-align:center">Soyez malin,<strong><span class="louez">Louez la voiture </span></strong> <span class="voisin">du voisin </span> </h1>
-  <h2 style="text-align:center">de la voisine..</h2>
- </p>
-
-    <div id="car">
-      <input class="model" type="text" placeholder="Car model"/>
-      <input class="price-by-day" type="number" placeholder="Price by day"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-    </div>
-    <div id="rental">
-      <input class="begin" type="date" placeholder="Rental begin date"/>
-      <input class="end" type="date" placeholder="Rental end date"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
+  <h1>Drivy Price Simulator</h1>
+  
+   <form style="text-align:center">
+   
+  <fieldset>
+    <legend>Informations</legend>
     
-    <main class="main-content">
+      <input class="model" id="model_1" type="text" placeholder="Car model"/> <br />
+      <input class="price-by-day" id="price-by-day_1" type="number" placeholder="Price by day"/><br />
+      <input class="price-by-km" id="price-by-km_1" type="number" placeholder="Price by km"/><br />
+    
+     <input class="begin" type="date" placeholder="Rental begin date" id="begin_1" /><br />
+      <input class="end" type="date" placeholder="Rental end date" id="end_1" /><br />
+      <input class="distance" type="select" placeholder="Distance in km" id="distance_1" /><br />
+    
+    
+ 
+  </fieldset>
+</form>
+  <p> </p>
+    <button id="compute" class="button">Go</button>
+  <div> </div>
+  <div> </div>
 
-      <div id="cars" class="mdl-grid"></div>div>
-      <script id="templateCars" type="x-tmp1-mustache">
+  <footer>
 
-        {{#cars}}
-          <div class="mdl-card mdl-cell mdl-cell--3-col mdl-shadow--2dp">
-            <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">{{name}}</h2>
-            </div>
-          </div>ss
-        {{/cars}}
-      </script>
-      
-    </main>
-
-<footer>
   <a class="fb" href="https://fr-fr.facebook.com/drivyfr/"><img src="facebook.png"/></a>
-  <a class="twitter" href="https://twitter.com/drivy" > <img src="twitter.PNG"  /> </a>
+  <a class="twitter" href="https://twitter.com/drivy" > <img src="twitter.png"  /> </a>
   <a class="drivy" href="https://www.drivy.com/" > <img src="drivy.png"  /> </a>
   
 </footer>
-  
+
+    <div id="actors" class="test"> </div>
     <script id="template" type="x-tmpl-mustache">
       {{#actors}}
         <div class="actor">
-          <span>{{who}}</span>
-          <span>{{type}}</span>
-          <span>{{amount}}</span>
+        <span>{{who}}</span>
+        <span>{{type}}</span>
+        <span> : {{amount}}</span>
         </div>
       {{/actors}}
     </script>
@@ -66,4 +55,3 @@
   </body>
 </html>
 
-</div>
