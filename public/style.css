@@ -1,0 +1,231 @@
+
+h1
+{
+    color: white;
+	font-size:Xlarge;
+	font-weight:bold;
+	font-family: Verdana,Impact;
+	margin-top:60px;
+}
+
+
+img{
+    height: auto; 
+    width: auto; 
+    max-width: 50px; 
+    max-height: 50px;
+	
+}
+.model
+{
+	
+	height:30px;
+	width:300px;
+	margin-bottom:30px;
+	border:1px solid #F5C5C5;
+	border-radius:5px;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+}
+
+.price-by-day
+{
+	height:30px;
+	width:300px;
+	border:1px solid #F5C5C5;
+	border-radius:5px;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+	
+	
+}
+.price-by-km
+{
+	height:30px;
+	width:300px;
+	margin-bottom:30px;
+	border:1px solid #F5C5C5;
+	border-radius:5px;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+	
+}
+label
+{
+	font-weight:bold;
+	font-family: Verdana,Impact;
+	
+	
+	
+}
+.begin
+{
+	height:30px;
+	width:300px;
+	border:1px solid #F5C5C5;
+	border-radius:5px;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+	
+	
+}
+.end
+{
+	height:30px;
+	width:300px;
+	margin-bottom:30px;
+	border:1px solid #F5C5C5;
+	border-radius:5px;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+	
+	
+}
+
+.distance
+{
+	height:30px;
+	width:300px;
+	margin-bottom:30px;
+	border:1px solid #F5C5C5;
+	border-radius:5px;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+	
+}
+
+
+
+
+/*Création d'un checkbox + un slider (label)*/
+
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+.cbox1{
+	width: 40px;
+	height: 10px;
+	background: #555;
+	margin: 20px 80px;
+	position: relative;
+	border-radius: 3px;
+}
+.cbox1 label {
+	display: block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: -3px;
+	left: -3px;
+
+	background: #ccc;
+}
+.cbox1 input[type=checkbox]:checked + label {
+	left: 27px;
+}
+
+/**
+*Fin du checkbox..
+*/
+
+/**
+*Bouton changeant de couleur au passage de la souris (hover)
+*/
+
+.button {
+    background-color: grey ; 
+    background-image: url('icone-recherche.png');
+    background-position: 10%;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 12px;
+	border: 2px solid black;
+	opacity : 0.7;
+	transition-duration: 0.4s;
+	
+}
+.button:hover {
+    background-color: white; 
+    color: black;
+	opacity : 0.7;
+	border : 2px solid black
+}
+
+
+
+
+body{
+	text-align : center;
+	background : url("road66.jpg");
+	opacity : 0.9;
+	background-size: 110%;
+    background-repeat: no-repeat;
+}
+h2
+{
+    color: white;
+	font-size:Xlarge;
+	font-weight:bold;
+	font-family: Verdana,Impact;
+}
+
+label
+{
+	font-weight:bold;
+	font-family: Verdana,Impact;
+	
+	
+	
+}
+
+legend
+{
+    font-style: italic;
+}
+
+
+}
+fieldset
+{
+	
+ background-color:rgba(255,255,255, 0.3);
+ 
+	
+}
+form
+{
+	width: 700px; 
+    margin: auto; 
+ 
+    text-align: justify;
+    padding: 12px;
+	
+    margin-bottom: 20px;
+	
+}
+
+body
+{
+    background-image: url("road66.jpg");
+	background-repeat; no-repeat;
+	
+	
+}
+
+.button
+{
+	
+	text-align:center;
+	
+}
+footer {
+	position: absolute; 
+	bottom: 0;
+	margin-bottom: 30px;
+	margin-left:40px;
+}
+

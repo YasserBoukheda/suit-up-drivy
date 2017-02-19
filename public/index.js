@@ -1,4 +1,4 @@
-/*global Mustache */
+ /*global Mustache */
 'use strict';
 
 var DRIVY = DRIVY || {};
@@ -14,6 +14,21 @@ var DRIVY = DRIVY || {};
     document.querySelector('#actors').innerHTML = rendered;
   };
 
+var rederCars= function render( cars) { 
+    var template document.querySelector('#templateCars').innerHTML; // On récuprer le texte dans la balise templateCars 
+    Mustache.parse(template); //optional, speeds up future uses 
+
+    var rendered = Mustache.render(template, { //Pour mettre les cars dans l'ordre
+      'cars': cars.sort (function(a,b) {
+          return a.name.localeCompare(b.name);
+
+      }).map(function (car){
+          car.pricePerKm=formatMoney(car.pricePerKm);
+          car.pricePerDay=formatMoney(car.pricePerDay);
+          return car;
+      })
+    });
+}
   var button = document.querySelector('#compute');
 
   button.addEventListener('click', function onClick () {
